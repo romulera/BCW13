@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Exercicio 03 </title>
+</head>
+<body>
+<form>
+    <h2>Dados pessoais</h2>
+
+    <label for="pnome">Nome:</label>
+    <input type="text" id="pnome" name="pnome" required><br><br>
+
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+
+    <label for="cpf" required minlength="11" maxlength="11" size="11" >CPF:</label>
+    <input type="number" id="cpf" name="sobrenome" required><br><br>
+
+    <label for="nasc">Data Nascimento:</label>
+    <input type="date" id="nasc" name="Data Nascimento" required><br><br>
+
+    <h2>Genero</h2>     
+        Masculino
+        <input type="radio" checked=true name="genero">
+        Feminino
+        <input type="radio"  name="genero"> 
+        Outro 
+        <input type="radio"  name="genero">  
+            
+<br>
+<br>
+<br>
+
+<input type="submit" value="Enviar">
+
+</form>    
+   
+</body>
+</html>
