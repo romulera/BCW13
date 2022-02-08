@@ -1,0 +1,49 @@
+* { 
+    background-color: rgb(241, 241, 241);
+    font-family: sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+h3, h5 {
+    display: inline;
+}
+
+section { display: inline;
+    width: 400px;
+    margin: 0 auto;
+    border: 20px;
+}
+
+
+p { 
+    width: 450px;
+    text-align: left;
+    }
+
+
+img {
+    float: left;
+    padding: 20px;
+    width: 180px;
+}
+
+div {
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 180px;
+
+    box-shadow: 2px 2px 3px 3px rgb(211, 211, 211);
+}
+
+
+
