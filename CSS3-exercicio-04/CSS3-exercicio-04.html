@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Background Gradiente</title>
+
+    <style>
+
+        body { 
+            margin: 0 auto;
+        }
+
+        div {
+            height: 100vh;
+        }
+
+        p {
+            border: 3px dotted rgb(0, 0, 0);            
+            margin: 0 auto;  
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            font-size: 18px;
+            width: fit-content;           
+            }
+
+        #grad-1 {
+            background: linear-gradient( to bottom, purple, red, yellow );
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #grad-2 {
+            background: linear-gradient( to bottom, grey, rgb(163, 160, 160), grey );
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #grad-3 {
+            background: linear-gradient( to top, green, rgb(220, 122, 233),rgb(220, 122, 233), green );
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #grad-4 {
+            background: linear-gradient( to left, white, rgb(255, 152, 57) );
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #grad-5 {
+            background: linear-gradient( to right, white, rgb(255, 152, 57) );
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        
+        #gif-1 {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 255 ), rgba(255, 255, 0, 0.5)), url(".//giphy-1.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gif-2 {
+            height: 100vh;
+            background-image: linear-gradient(rgb(28, 28, 41), rgba(107, 17, 119, 0.5)), url("./giphy-2.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gif-3 {
+            height: 100vh;
+            background-image: linear-gradient(rgb(41, 28, 28), rgba(221, 246, 82, 0.1)), url(".//giphy.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="grad-1">
+    <p> comentário gradiente 1 </p>
+</div>  
+
+<div id="grad-2"> 
+    <p> comentário gradeiente 2 </p>
+</div>
+
+<div id="gif-1">
+    <p> comentário gif 1</p>
+</div>
+    
+<div id="gif-2">
+    <p> comentário gif 2</p>
+</div>
+
+<div id="gif-3">
+    <p> comentário gif 3</p>
+</div>
+
+<div id="grad-3">
+    <p> comentário gradiente 3 </p>
+</div>  
+
+<div id="grad-4"> 
+    <p> comentário gradeiente 4 </p>
+</div>
+
+<div id="grad-5"> 
+    <p> comentário gradeiente 5 </p>
+</div>
+
+</div>
+</body>
+</html>
