@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Java - Exercicio - 01</title>
+</head>
+<body>
+    <script>
+        
+        alert('Vamos construir um triângulo!')  
+        let A = parseFloat(prompt("Digite a medida A do triângulo"))
+        let B = parseFloat(prompt("Digite a medida B do triângulo"))
+        let C = parseFloat(prompt("Digite a medida C do triângulo"))
+
+        if (A == B && A == C && B == C) {
+            alert("Você escolheu um triângulo equilatero!")
+
+        } else if (A != B && A !=C && B != C) {
+            alert("Danadinho, você escolheu um triângulo escaleno!")
+
+        } else if (A == B || A == C || B == C) {
+            alert("Você escolheu um triângulo isoceles !") }
+           
+    </script>
+    
+</body>
+</html>
