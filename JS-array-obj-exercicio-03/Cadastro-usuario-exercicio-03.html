@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03 - Cadastro de usuário</title>
+</head>
+<body>
+    <script>
+        let DB = []
+        let cont = 0
+        alert('Bem vindo ao cadastro de usuários!')  
+        let i = parseInt(prompt("Quantos usuários deseja cadastrar ?"))
+
+    class User { 
+            
+        constructor(n, t, s, num) {
+           this.nome = n
+           this.telefone = t
+           this.senha = s
+           this.numUser = num
+            }
+        
+    }
+
+         while (cont < i) {
+            cont += 1 
+            let n_temp = prompt(`Digite o nome do usuário: ${cont}`)
+            let t_temp = prompt(`Digite o telefone do usuário: ${cont}`)
+            let s_temp = prompt(`Digite a senha do usuário: ${cont}`)
+            let numUser = "UN-" + 000+cont
+
+            alert(`O código desse usuário é: ${numUser}`)
+
+            let novo_usuario = new User(n_temp, t_temp, s_temp, numUser)
+            // alert(novo_usuario)
+            DB.push(novo_usuario)
+
+
+         }
+         for (novo_usuario of DB){
+                document.write(`<strong>Código - </strong>${novo_usuario.numUser}<br>`)
+                document.write(`<strong>Nome - </strong>${novo_usuario.nome}<br>`) 
+                document.write(`<strong>Telefone - </strong>${novo_usuario.telefone}<br>`)
+                document.write(`<br> <br>`)
+            }
+
+    </script>
+    
+</body>
+</html>
