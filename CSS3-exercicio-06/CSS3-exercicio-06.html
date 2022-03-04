@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06 - Trabalhando com grid</title>
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;
+        margin: 0px; /*body sempre tem margem por default, então sempre bom zerar a margem*/
+    }
+
+    div {
+        margin-top: 30px;
+    }
+
+    .grid-container-1 {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 200px 1fr ;
+        grid-template-areas: 
+        'h h'
+        'm m'
+        ;
+    }
+
+    .grid-container-2 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-areas: 
+    'h'
+    'm'
+    'f'
+    ;
+    }
+
+    .grid-container-3 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    'h m'
+    ;
+    }
+
+    .grid-container-4 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    
+    grid-template-areas: 
+    'h m a'
+    ;
+    }
+
+    .grid-container-5 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    'h h'
+    'a m'
+    ;
+    }
+
+    .grid-container-6 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-areas: 
+    'h h h'
+    'a m f'
+    ;
+    }
+
+    .grid-container-7 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    'h h '
+    'a m '
+    'f f'
+    ;
+    }
+    
+    .grid-container-8 {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 200px 1fr 100px;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-areas: 
+    'h h h'
+    'a m b'
+    'f f f'
+    ;
+    }
+
+    header {
+        background-color: red;
+        grid-area: h;
+        text-align: center;
+        text-anchor: middle ;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    main {
+        background-color: blue;
+        grid-area: m;
+        padding: 40px;
+    }
+
+    aside {
+        background-color: green;
+        grid-area: a;
+        padding: 40px;
+    }
+
+    footer {
+        background-color: rgb(255, 196, 0);
+        grid-area: f;
+        text-align: center;
+        text-anchor: middle ;
+    }
+    
+
+</style>
+
+
+<body>
+<div class="grid-container-1">
+    <header>
+        <p>Bem vindo a loucura do grid - 1 </p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+
+
+</div>
+
+<div class="grid-container-2">
+    <header>
+        <p>Bem vindo a loucura do grid - 2 </p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+    <footer>
+        <p>Tchau em !</p>
+    </footer>
+
+</div>
+
+<div class="grid-container-3">
+    <header>
+        <p>Bem vindo a loucura do grid - 3</p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+</div>
+
+<div class="grid-container-4">
+    <header>
+        <p>Bem vindo a loucura do grid - 4</p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+    <aside>
+        <p> ASIDE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </aside>
+
+</div>
+
+<div class="grid-container-5">
+    <header>
+        <p>Bem vindo a loucura do grid - 5</p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+    <aside>
+        <p> ASIDE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </aside>
+
+
+</div>
+
+<div class="grid-container-6">
+    <header>
+        <p>Bem vindo a loucura do grid - 6</p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+    <aside>
+        <p> ASIDE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </aside>
+
+    <aside>
+        <p> ASIDE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </aside>
+
+
+  <footer>
+        <p>Tchau em !</p>
+    </footer>
+
+</div>
+
+<div class="grid-container-7">
+    <header>
+        <p>Bem vindo a loucura do grid - 7</p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+    <aside>
+        <p> ASIDE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </aside>
+
+    <footer>
+        <p>Tchau em !</p>
+    </footer>
+
+</div>
+
+<div class="grid-container-8">
+    <header>
+        <p>Bem vindo a loucura do grid - 8</p>
+    </header>
+
+    <main>
+        <p> MAIN Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </main>
+
+    <aside>
+        <p> ASIDE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi mollitia dolores sint voluptatibus doloribus quos ab, 
+            sed quaerat dolorum voluptatem ad quis impedit facilis nulla dicta itaque aliquid corporis nemo!</p>
+    </aside>
+
+
+    <aside style="grid-area: b;">
+        <p> ASIDE do lado direito</p>
+    </aside>
+
+
+    <footer>
+        <p>Tchau em !</p>
+    </footer>
+
+</div>
+    
+</body>
+</html>

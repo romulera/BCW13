@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Background Gradiente</title>
+
+    <style>
+
+        body { 
+            margin: 0 auto;
+        }
+
+        div {
+            height: 100vh;
+        }
+
+        p {
+            border: 3px dotted rgb(0, 0, 0);            
+            margin: 0 auto;  
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            font-size: 18px;
+            width: fit-content;           
+            }
+
+        #grad-1 {
+            background-image: linear-gradient( to bottom, rgb(139, 3, 139, 0.2), rgb(255, 0, 0, 0.2), rgb(255, 255, 0,0.8) ), url(.//napoleon-dynamite-1024x768.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #grad-2 {
+            background-image: linear-gradient( to bottom, grey, rgb(163, 160, 160, 0.2), grey ), url(.//movies_napoleon_dynamite_1.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #grad-3 {
+            background-image: linear-gradient( to top, green, rgb(220, 122, 233, 0.2),rgb(220, 122, 233, 0.4), green ), url(.//external-content.duckduckgo.com.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #grad-4 {
+            background-image: linear-gradient( to left, #ffffff, rgb(255, 152, 57, 0.3) ), url(.//30e2dd9b-b0e9-4092-ba82-f33766ced8ac_1920x1080.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #grad-5 {
+            background-image: linear-gradient( to right, white, rgb(255, 152, 57, 0.2) ), url(.//017d5ba0-a88c-4ea7-9f01-d3eefe8ea391-Napoleon_Dynamite.webp);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        
+        #gif-1 {
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 255 ), rgba(255, 255, 0, 0.5)), url(".//giphy-1.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gif-2 {
+            height: 100vh;
+            background-image: linear-gradient(rgb(28, 28, 41), rgba(107, 17, 119, 0.5)), url("./giphy-2.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #gif-3 {
+            height: 100vh;
+            background-image: linear-gradient(rgb(41, 28, 28), rgba(221, 246, 82, 0.1)), url(".//giphy.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="grad-1">
+    <p> comentário gradiente 1 </p>
+</div>  
+
+<div id="grad-2"> 
+    <p> comentário gradiente 2 </p>
+</div>
+
+<div id="gif-1">
+    <p> comentário gif 1</p>
+</div>
+    
+<div id="gif-2">
+    <p> comentário gif 2</p>
+</div>
+
+<div id="gif-3">
+    <p> comentário gif 3</p>
+</div>
+
+<div id="grad-3">
+    <p> comentário gradiente 3 </p>
+</div>  
+
+<div id="grad-4"> 
+    <p> comentário gradiente 4 </p>
+</div>
+
+<div id="grad-5"> 
+    <p> comentário gradiente 5 </p>
+</div>
+
+</div>
+</body>
+</html>

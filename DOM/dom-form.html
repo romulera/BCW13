@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Formulário DOM</title>
+
+    <style>
+        * { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
+    }
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: whitesmoke;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-form {
+            display: flex;
+            flex-direction: column;
+            border: 1px dotted gray;
+            min-height: 350px;
+            min-width: 350px;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            justify-content: space-around; /* espalhar geral  */
+        }
+
+        .form-block {
+            display: flex;
+            flex-direction: column;
+            padding: 6px;
+        }
+        .form-block label {
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            
+        }
+        .form-block + .form-block { /* um form block na sequencia do outro faça essa estylizacao */
+            margin-top: 10px;
+        }
+
+
+
+        .styled-input {
+            border: none;
+            height: 30px;
+            border-radius: 6px;
+            padding: 0 10px;
+
+        }
+        .btn {
+            height: 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+        .btn:hover {
+            filter: invert(10);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form id="main-form" action="">
+
+        <div class="form-block">
+            <label for="username"> Username: </label> <!-- bom colocar label para os leitores de tela -->
+            <input type="text" id="username" placeholder="nome da mula" class="styled-input"> 
+        </div>
+
+        <div class="form-block">
+            <label for="email"> E-mail: </label>
+            <input type="email" id="email" placeholder="email da mula" class="styled-input"> 
+        </div>
+
+        <div class="form-block">
+            <label for="pass1"> Password: </label>
+            <input type="password" id="pass1" placeholder="mula pass" class="styled-input"> 
+        </div>
+
+        <div class="form-block">
+            <label for="pass2"> Confirm pass: </label>
+            <input type="password" id="pass2" placeholder="confirma mula" class="styled-input"> 
+        </div>
+
+        <div class="form-block">
+            <button type="submit" class="btn"> Cadastrar</button>
+        </div>
+
+    </form>
+
+    <script src=".//dom-form.js"> </script>
+  
+</body>
+</html>
