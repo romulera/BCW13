@@ -1,0 +1,24 @@
+/* p, h1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+} */
+
+
+
+.card-automatico { 
+    max-width: 250px;
+    border: 4px solid rgb(230, 230, 230);
+    padding: 9px;
+}
+
+
+div p {
+    text-align: justify;
+
+}
+

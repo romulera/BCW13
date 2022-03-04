@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+* { font-family: sans-serif;}
+ 
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+input {
+    display: flex;
+    height: 30px;
+    text-align: left;
+    font-size: 20px;
+    align-content: center;
+    justify-items: center;
+}
+
+div {
+    box-sizing: border-box;
+    margin: 0px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 20px;
+    background-color: rgba(215, 226, 236, 0.472);
+}
+
+
+
+
